@@ -1,5 +1,7 @@
 import express from 'express';
 
+import { url } from './url.js';
+
 const app = express();
 
 app.get('/:logo', async (req, res) => {
@@ -8,67 +10,67 @@ app.get('/:logo', async (req, res) => {
 
     switch (name) {
         case '403': {
-            res.redirect('403Forbidden/Forbidden.png');
+            res.redirect(url('403Forbidden/Forbidden.png'));
 
             break;
         };
         case '404': {
-            res.redirect('404Notfound/NotFound.png');
+            res.redirect(url('404Notfound/NotFound.png'));
 
             break;
         };
         case '418': {
-            res.redirect("418I'mateapot/418I'mateapot.png");
+            res.redirect(url("418I'mateapot/418I'mateapot.png"));
 
             break;
         };
         case '503': {
-            res.redirect('503ServiceUnavailable.png/ServiceUnavailable.png');
+            res.redirect(url('503ServiceUnavailable.png/ServiceUnavailable.png'));
 
             break;
         };
         case 'angular': {
-            res.redirect('Angular/Angular.png');
+            res.redirect(url('Angular/Angular.png'));
 
             break;
         };
         case 'angular_old': {
-            res.redirect('Angular/Angular_Old.png');
+            res.redirect(url('Angular/Angular_Old.png'));
 
             break;
         };
         case 'arch_linux': {
-            res.redirect('ArchLinux/ArchLinux.png');
+            res.redirect(url('ArchLinux/ArchLinux.png'));
 
             break;
         };
         case 'bluesky': {
-            res.redirect('Bluesky/Bluesky.png');
+            res.redirect(url('Bluesky/Bluesky.png'));
 
             break;
         };
         case 'cs_purple': {
-            res.redirect('C#/C# Purple.png');
+            res.redirect(url('C#/C# Purple.png'));
 
             break;
         };
         case 'cs': {
-            res.redirect('C#/C#.png');
+            res.redirect(url('C#/C#.png'));
 
             break;
         };
         case 'cpp': {
-            res.redirect('C++/C++.png');
+            res.redirect(url('C++/C++.png'));
 
             break;
         };
         case 'c_all': {
-            res.redirect('C,C#,C++/All.png');
+            res.redirect(url('C,C#,C++/All.png'));
 
             break;
         };
         case 'c': {
-            res.redirect('C/C.png');
+            res.redirect(url('C/C.png'));
 
             break;
         };
