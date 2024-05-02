@@ -1,8 +1,16 @@
 import express from 'express';
 
+import { logoRepo } from './config.js';
 import { url } from './url.js';
 
 const app = express();
+
+app.get('/', (req, res) => {
+    const { type } = req.query;
+
+    if (type === 'docs') res.redirect('https://github.com/Tolga1452/kawaii?tab=readme-ov-file#about');
+    else res.redirect(logoRepo);
+});
 
 app.get('/:logo', async (req, res) => {
     const { logo } = req.params;
