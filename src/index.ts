@@ -6,9 +6,9 @@ import { url } from './url.js';
 const app = express();
 
 app.get('/', (req, res) => {
-    const { type } = req.query;
+    const { docs } = req.query;
 
-    if (type === 'docs') res.redirect('https://github.com/Tolga1452/kawaii?tab=readme-ov-file#about');
+    if (typeof docs === 'string') res.redirect('https://github.com/Tolga1452/kawaii?tab=readme-ov-file#about');
     else res.redirect(logoRepo);
 });
 
