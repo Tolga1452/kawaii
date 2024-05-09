@@ -1,1 +1,1 @@
-export const logoRepo = 'https://github.com/SAWARATSUKI/Logos';
+export const logoRepo = 'https://github.com/SAWARATSUKI/KawaiiLogos';
