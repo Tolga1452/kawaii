@@ -16,7 +16,7 @@ For example <https://kawaii.tolgchu.xyz/angular.png> will return the Angular ima
 > If the platform supports media embedding without extension, you don't need to add `.png` at the end of the URL.
 
 > [!TIP]
-> You can use the url <https://kawaii.tolgchu.xyz> to see the original repo and <https://kawaii.tolgchu.xyz?type=docs> to see this documentation.
+> You can use the URL <https://kawaii.tolgchu.xyz> to see the original repository and <https://kawaii.tolgchu.xyz?type=docs> to see this documentation.
 
 ## Available Logos
 
