@@ -17,6 +17,11 @@ app.get('/:logo', async (req, res) => {
     const [name] = logo.split('.');
 
     switch (name) {
+        case 'react': {
+            res.redirect(url('React/React.png'));
+
+            break;
+        };
         case '403': {
             res.redirect(url('ResponseCode/403 Forbidden.png'));
 
