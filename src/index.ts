@@ -32,6 +32,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case '500': {
+            res.redirect(url('ResponseCode/500 InternalServerError.png'));
+
+            break;
+        };
         case '503': {
             res.redirect(url('ResponseCode/503 ServiceUnavailable.png'));
 
