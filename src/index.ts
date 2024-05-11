@@ -47,6 +47,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case 'ts': {
+            res.redirect(url('TypeScript/TypeScript.png'));
+
+            break;
+        };
         default: {
             res.status(404).send('Not found');
 
