@@ -1,6 +1,7 @@
 import express from 'express';
 
 import { logoRepo } from './config.js';
+import { Path } from './types.js';
 import { url } from './url.js';
 
 const app = express();
@@ -14,11 +15,47 @@ app.get('/', (req, res) => {
 
 app.get('/:logo', async (req, res) => {
     const { logo } = req.params;
+    const { lang } = req.query;
     const [name] = logo.split('.');
 
     switch (name) {
+        case 'hono': {
+            res.redirect(url('Hono/Hono.png'));
+
+            break;
+        };
         case 'react': {
             res.redirect(url('React/React.png'));
+
+            break;
+        };
+        case 'programmer': {
+            let path = '';
+
+            switch (lang) {
+                case 'jp': {
+                    path = 'IamSeries/IamProgrammer!.png';
+
+                    break;
+                };
+                default: {
+                    path = 'IamSeries/IamProgrammerEnglish.png';
+
+                    break;
+                };
+            };
+
+            res.redirect(url(path as Path));
+
+            break;
+        };
+        case 'kt': {
+            res.redirect(url('Kotlin/Kotlin.png'));
+
+            break;
+        };
+        case 'laravel': {
+            res.redirect(url('Laravel/LaravelTransparent.png'));
 
             break;
         };
