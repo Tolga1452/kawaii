@@ -19,6 +19,11 @@ app.get('/:logo', async (req, res) => {
     const [name] = logo.split('.');
 
     switch (name) {
+        case 'at': {
+            res.redirect(url('ATProtocol/ATProtocol.png'));
+
+            break;
+        };
         case 'hono': {
             res.redirect(url('Hono/Hono.png'));
 
@@ -56,6 +61,11 @@ app.get('/:logo', async (req, res) => {
         };
         case 'laravel': {
             res.redirect(url('Laravel/LaravelTransparent.png'));
+
+            break;
+        };
+        case 'node': {
+            res.redirect(url('Node.js/Node.js.png'));
 
             break;
         };
