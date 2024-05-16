@@ -99,6 +99,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case 'moviemaker': {
+            res.redirect(url('ゆっくりMovieMaker4/ゆっくりMovieMaker4.png'));
+
+            break;
+        };
         default: {
             res.status(404).send('Not found');
 

@@ -41,5 +41,6 @@ For example, <https://kawaii.tolgchu.xyz/programmer?lang=jp> will return the "I 
 | 500 Internal Server Error | `500` | None |
 | 503 Service Unavailable | `503` | None |
 | TypeScript | `ts` | None |
+| Movie Maker 4 | `moviemaker` | None |
 
 Feel free to create a pull request to add more logos!
