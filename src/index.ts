@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:logo', async (req, res) => {
-    const { logo } = req.params;
-    const { lang } = req.query;
+    const logo = req.params.logo.toLowerCase();
+    const lang = typeof req.query.lang === 'string' ? req.query.lang.toLowerCase() : undefined;
     const [name] = logo.split('.');
 
     switch (name) {
