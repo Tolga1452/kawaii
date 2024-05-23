@@ -24,6 +24,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case 'bsky': {
+            res.redirect(url('Bluesky/BlueSky.png'));
+
+            break;
+        };
         case 'hono': {
             res.redirect(url('Hono/Hono.png'));
 
@@ -31,6 +36,26 @@ app.get('/:logo', async (req, res) => {
         };
         case 'react': {
             res.redirect(url('React/React.png'));
+
+            break;
+        };
+        case 'designer': {
+            let path = '';
+
+            switch (lang) {
+                case 'jp': {
+                    path = 'IamSeries/IamDesigner!.png';
+
+                    break;
+                };
+                default: {
+                    path = 'IamSeries/IamDesigner!English.png';
+
+                    break;
+                };
+            };
+
+            res.redirect(url(path as Path));
 
             break;
         };
@@ -54,6 +79,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case 'intellij': {
+            res.redirect(url('IntelliJ IDEA/IntelliJ IDEA.png'));
+
+            break;
+        };
         case 'kt': {
             res.redirect(url('Kotlin/Kotlin.png'));
 
@@ -61,6 +91,11 @@ app.get('/:logo', async (req, res) => {
         };
         case 'laravel': {
             res.redirect(url('Laravel/LaravelTransparent.png'));
+
+            break;
+        };
+        case 'misskey': {
+            res.redirect(url('Misskey/Misskey.png'));
 
             break;
         };
@@ -96,6 +131,11 @@ app.get('/:logo', async (req, res) => {
         };
         case 'ts': {
             res.redirect(url('TypeScript/TypeScript.png'));
+
+            break;
+        };
+        case 'tailwind': {
+            res.redirect(url('tailwind css/Tailwindcss.png'));
 
             break;
         };

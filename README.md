@@ -29,10 +29,14 @@ For example, <https://kawaii.tolgchu.xyz/programmer?lang=jp> will return the "I 
 | Logo Name | Image Name | Other Languages |
 | --- | --- | --- |
 | AT Protocol | `at` | None |
+| Bluesky | `bsky` | None |
 | Hono | `hono` | None |
+| I am Designer | `designer` | `jp` (Japanese) |
 | I am Programmer | `programmer` | `jp` (Japanese) |
+| IntelliJ IDEA | `intellij` | None |
 | Kotlin | `kt` | None |
 | Laravel | `laravel` | None |
+| Misskey | `misskey` | None |
 | Node.js | `node` | None |
 | React | `react` | None |
 | 403 Forbidden | `403` | None |
@@ -41,6 +45,7 @@ For example, <https://kawaii.tolgchu.xyz/programmer?lang=jp> will return the "I 
 | 500 Internal Server Error | `500` | None |
 | 503 Service Unavailable | `503` | None |
 | TypeScript | `ts` | None |
+| Tailwind CSS | `tailwind` | None |
 | Movie Maker 4 | `moviemaker` | None |
 
 Feel free to create a pull request to add more logos!
