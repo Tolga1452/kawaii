@@ -29,6 +29,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case 'go': {
+            res.redirect(url('Go Lang/Golang.png'));
+
+            break;
+        };
         case 'hs': {
             res.redirect(url('Haskell/haskell.png'));
 
