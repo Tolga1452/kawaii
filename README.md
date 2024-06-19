@@ -39,6 +39,7 @@ For example, <https://kawaii.tolgchu.xyz/programmer?lang=jp> will return the "I 
 | Misskey | `misskey` | None |
 | Node.js | `node` | None |
 | React | `react` | None |
+| Replit | `replit` | None |
 | 403 Forbidden | `403` | None |
 | 404 Not Found | `404` | None |
 | 418 I'm a teapot | `418` | None |

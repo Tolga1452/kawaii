@@ -39,6 +39,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case 'replit': {
+            res.redirect(url('Replit/Replit.png'));
+
+            break;
+        };
         case 'designer': {
             let path = '';
 
