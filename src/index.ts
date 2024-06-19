@@ -99,6 +99,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case 'misskeyio': {
+            res.redirect(url('MIsskey.io/Misskey.io.png'));
+
+            break;
+        };
         case 'misskey': {
             res.redirect(url('Misskey/Misskey.png'));
 

@@ -36,6 +36,7 @@ For example, <https://kawaii.tolgchu.xyz/programmer?lang=jp> will return the "I 
 | IntelliJ IDEA | `intellij` | None |
 | Kotlin | `kt` | None |
 | Laravel | `laravel` | None |
+| Misskey.io | `misskeyio` | None |
 | Misskey | `misskey` | None |
 | Node.js | `node` | None |
 | React | `react` | None |
