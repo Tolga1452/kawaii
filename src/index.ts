@@ -29,6 +29,11 @@ app.get('/:logo', async (req, res) => {
 
             break;
         };
+        case 'hs': {
+            res.redirect(url('Haskell/haskell.png'));
+
+            break;
+        };
         case 'hono': {
             res.redirect(url('Hono/Hono.png'));
 

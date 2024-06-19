@@ -30,6 +30,7 @@ For example, <https://kawaii.tolgchu.xyz/programmer?lang=jp> will return the "I 
 | --- | --- | --- |
 | AT Protocol | `at` | None |
 | Bluesky | `bsky` | None |
+| Haskell | `hs` | None |
 | Hono | `hono` | None |
 | I am Designer | `designer` | `jp` (Japanese) |
 | I am Programmer | `programmer` | `jp` (Japanese) |
