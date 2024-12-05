@@ -12,7 +12,7 @@
     "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
-    "express": "^4.21.1"
+    "express": "^4.21.2"
   },
   "name": "kawaii",
   "description": "A domain for kawaii logos made by @SAWARATSUKI",
